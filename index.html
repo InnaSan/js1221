@@ -14,14 +14,139 @@
 </head>
 <body>
 
-	<div class="box"></div>
 
 
-	<div class="block"></div>
+<script>
+	
+	let a = 5; // number correct calculations up to 2^53 -1 ±0 ±Infinity NaN
+	let b = 'Hello'; // string
+	const c = 10;
+	// c = 11 TypeError: Assignment to constant variable.
 
-	<div class="circle"></div>
+	let d, e, f; // undefined
+	d = null; // null
+	e = false; // true || false boolean
+	f = '1238947349724923473298n' // BigInt 
+	let g = Symbol('name');
+
+	// ?????? 8й тип данных - объект
+
+
+	// + - / * ++ -- += -= % == === != !== ! !! >= <= > < && || 
+
+	let x = a + c; // 15
+	x = a - c; // -5
+
+	x++;
+
+	x += 5; // x = x+5
+
+	let y = 7;
+
+	if(x > y){
+		console.log('x > y');
+	}
+	else if(x === y){
+		console.log('x = y');
+	}
+	else{
+		console.log('x < y');
+	}
+
+
+	// console.log(x);
+	// console.warn(y);
+	// console.error(x+y);
+
+	// alert(111);
+	// let z = confirm('Delete item?');
+
+
+	// let day = +prompt('Type a num 1-7'); // Number(prompt('Type a num 1-7'))
+
+	// switch(day){
+	// 	case 1: console.log('Monday');
+	// 			break;
+	// 	case 2: console.log('Tue');
+	// 			break;
+	// 	case 3: console.log('Wed');
+	// 			break;
+	// 	case 4: console.log('Thu');
+	// 			break;
+	// 	case 5: console.log('Fri');
+	// 			break;
+	// 	case 6: console.log('Sat');
+	// 			break;
+	// 	case 7: console.log('Sun');
+	// 			break;
+	// 	default: console.log('Not a day');
+	// 			break;
+	// }
+
+
+	let m = 9;
+	let n = 11;
+	let o = m > n ? m : n; // if(m>n) ? true : false
+ 
+	//  String  '' ""  ``  
+	//  'My name is' + name + ' I am from ' + city + '.' => 
+	let name = 'Stranger';
+	let city = 'LA';
+	// let name, city;
+
+	let msg =  `My name is ${name} I am from ${city}.` // undefined undefined
+
+
+	if(''){
+		console.warn('333');
+	}
+
+	// isNaN(NaN) == true, NaN != NaN
+
+	// to bool => 0, null, undefined, '', NaN	 == false the rest - true
+
+
+	for(let i = 0; i <= 5; i++){
+		// loop body
+		console.log(`i = ${i}`);
+	}
+
+
+	let j = 10; 
+	while(j > 5){
+		console.warn(`j = ${j}`);
+		j--;
+	}
+
+	let k = 5;
+	do{
+		console.log(`k = ${k}`);
+		k++;
+	}
+	while(k < 5);
+
+
+	// chess 
+	let size = 8;
+
+	for(let i = 0; i < size; i++){
+		let str = '';
+		for(let j = 0; j < size; j++){
+			if(i%2 == 0 && j%2 == 0 || i%2 !=0 && j%2 != 0 ){
+				str += '#';
+			}
+			else{
+				str += ' ';
+			}
+			
+		}
+		console.log(str);
+	}
+
+	
 
 
 
+</script>
 </body>
 </html>

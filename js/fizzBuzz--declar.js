@@ -1,14 +1,18 @@
 function fizzBuzz(num) {
   for (let i = 1; i <= num; i++) {
-    if (i % 3 === 0 && i % 5 === 0) {
-      console.log('fizzbuzz');
-    } else if (i % 3 === 0) {
-      console.log('fizz');
+    let str = '';
+    if (i % 3 === 0) {
+      if (i % 5 === 0) {
+        str += 'fizzbuzz';
+      } else {
+        str += 'fizz';
+      }
     } else if (i % 5 === 0) {
-      console.log('buzz');
+      str += 'buzz';
     } else {
-      console.log(i);
+      str += i;
     }
+    console.log(str);
   }
 }
 
